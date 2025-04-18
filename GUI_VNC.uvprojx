@@ -10,7 +10,7 @@
       <TargetName>Debug</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6210000::V6.21::ARMCLANG</pCCUsed>
+      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -140,9 +140,9 @@
           <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
+          <pFcarmOut>Web.c</pFcarmOut>
+          <pFcarmGrp>Source Files</pFcarmGrp>
+          <pFcArmRoot>Web</pFcArmRoot>
           <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
@@ -399,6 +399,16 @@
               <FileType>1</FileType>
               <FilePath>.\GUI_VNC.c</FilePath>
             </File>
+            <File>
+              <FileName>HTTP_Server_CGI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HTTP_Server_CGI.c</FilePath>
+            </File>
+            <File>
+              <FileName>Web.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>Web\Web.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -428,6 +438,16 @@
               <FileName>Abstract.txt</FileName>
               <FileType>5</FileType>
               <FilePath>.\Abstract.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Web</GroupName>
+          <Files>
+            <File>
+              <FileName>index.htm</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.htm</FilePath>
             </File>
           </Files>
         </Group>
@@ -850,6 +870,16 @@
               <FileType>1</FileType>
               <FilePath>.\GUI_VNC.c</FilePath>
             </File>
+            <File>
+              <FileName>HTTP_Server_CGI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HTTP_Server_CGI.c</FilePath>
+            </File>
+            <File>
+              <FileName>Web.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>Web\Web.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -879,6 +909,16 @@
               <FileName>Abstract.txt</FileName>
               <FileType>5</FileType>
               <FilePath>.\Abstract.txt</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Web</GroupName>
+          <Files>
+            <File>
+              <FileName>index.htm</FileName>
+              <FileType>9</FileType>
+              <FilePath>.\Web\index.htm</FilePath>
             </File>
           </Files>
         </Group>
@@ -1272,6 +1312,12 @@
           <targetInfo name="Release"/>
         </targetInfos>
       </component>
+      <component Cbundle="MDK-Pro" Cclass="Network" Cgroup="Service" Csub="Web Server Compact" Cvariant="HTTP" Cvendor="Keil" Cversion="7.19.0" condition="Network Web Server Compact">
+        <package name="MDK-Middleware" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="7.17.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
+        </targetInfos>
+      </component>
       <component Cbundle="MDK-Pro" Cclass="Network" Cgroup="Socket" Csub="BSD" Cvendor="Keil" Cversion="7.19.0" condition="Network UDP/TCP">
         <package name="MDK-Middleware" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="7.17.0"/>
         <targetInfos>
@@ -1429,6 +1475,14 @@
         <targetInfos>
           <targetInfo name="Debug"/>
           <targetInfo name="Release"/>
+        </targetInfos>
+      </file>
+      <file attr="config" category="header" name="Network\Config\Net_Config_HTTP_Server.h" version="7.2.0">
+        <instance index="0">RTE\Network\Net_Config_HTTP_Server.h</instance>
+        <component Cbundle="MDK-Pro" Cclass="Network" Cgroup="Service" Csub="Web Server Compact" Cvariant="HTTP" Cvendor="Keil" Cversion="7.19.0" condition="Network Web Server Compact" isDefaultVariant="1"/>
+        <package name="MDK-Middleware" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="7.17.0"/>
+        <targetInfos>
+          <targetInfo name="Debug"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="Network\Config\Net_Config_TCP.h" version="7.1.1">
