@@ -10,7 +10,7 @@
       <TargetName>Debug</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6220000::V6.22::ARMCLANG</pCCUsed>
+      <pCCUsed>6230000::V6.23::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -1166,8 +1166,8 @@
           <targetInfo name="Release"/>
         </targetInfos>
       </component>
-      <component Capiversion="2.1.0" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Cvendor="Keil" Cversion="1.12.0" condition="STM32F7 CMSIS_Driver ETH_MAC">
-        <package name="STM32F7xx_DFP" schemaVersion="1.7.28" url="https://www.keil.com/pack/" vendor="Keil" version="2.16.0"/>
+      <component Capiversion="2.2.0" Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Cvendor="Keil" Cversion="3.1.0" condition="CMSIS Driver requirements">
+        <package name="CMSIS-Driver_STM32" schemaVersion="1.7.37" url="https://www.keil.com/pack/" vendor="ARM" version="1.2.0"/>
         <targetInfos>
           <targetInfo name="Debug">
             <c>
